@@ -1,0 +1,370 @@
+ @font-face {
+    font-family: 'Myriad Pro Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('\MYRIADPRO-REGULAR.woff');
+    }
+
+    html, body{
+    height: 100%;
+    width:100%;
+    margin: 0px;
+    font-family:'Myriad Pro Regular';
+    color:#1E3264;
+    }
+
+    .flexer{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    }
+
+    div#nav{
+    position:relative;
+    width:100%;
+    background: white;
+    box-shadow: 0px 0px 3px 1px #888888;
+    }
+
+    div#logo-icon {
+	border-right: 1px solid rgba(0, 0, 0, 0.15);
+	border-width: 1px;
+	border-color: rgba(0, 0, 0, 0.15);
+	align-items: center;
+	justify-content: center;
+	background: transparent url("logo.png") no-repeat scroll center center / contain;
+	width: 100px;
+	padding: 0% 1%;
+}
+
+    div#logo {
+    padding: 0% 5% 0% 5%;
+    border-right-style:solid;
+    border-width:1px;
+    border-color: rgba(0, 0, 0, 0.15);
+    font-size:2em;
+    align-items:center;
+    justify-content: center;
+    white-space:nowrap;
+    }
+
+    div#rightnav{
+    position:relative;
+    width:100%;
+    right:0px;
+    justify-content:flex-end;
+    }
+
+    div#login-container {
+    width: 6em;
+    position:relative;
+    border-left-style:solid;
+    border-width:1px;
+    border-color: rgba(0, 0, 0, 0.15);
+    }
+
+
+    div#login{
+    width:100%;
+    align-items:center;
+    justify-content: center;
+    font-size:1.5em;
+    cursor: pointer;
+    }
+
+    div.option-form{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1000;
+    min-width: 160px;
+    padding: 5px;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: center;
+    list-style: none;
+    background-color: white;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border-color: rgba(0, 0, 0, 0.14902);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    -webkit-background-clip: padding-box;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    }
+
+    input.option-input{
+    margin:.2em;
+    }
+
+
+    button.option-button{
+    margin:.2em;
+    background-color: #F9F6F6;
+    border-width:1px;
+
+    }
+
+    div#create-container{
+    width:15em;
+    position:relative;
+    border-left-style:solid;
+    border-width:1px;
+    border-color: rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    }
+
+    div#create {
+    width:100%;
+    align-items:center;
+    justify-content: center;
+    font-size:1.5em;
+    }
+
+    div#simplenav-button{
+    display:none;
+    padding: 0% 2% 0% 0%;
+    }
+
+    div#one{
+    min-height: 100%;
+    width:100%;
+    background: url(background.png) center center no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    background-position: left;
+    padding: 0;
+    margin-top: 0px !important;
+    align-items: center;
+	justify-content: center;
+    }
+
+
+    div#search {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #5E5D5D;
+	background-color: #F7F6F3;
+	width: 470px;
+	height: 150px;
+	position: relative;
+
+}
+
+    div#header-container{
+    height: 24%;
+    width: 100%;
+
+    }
+
+   h2#search-header {
+	text-align: center;
+	margin: 0px;
+	color: #FFF;
+	background-color: #337AB7;
+	height: 100%;
+	width: 100%;
+	white-space: nowrap;
+	font-size: 30px;
+}
+
+
+  div#search-container {
+	position: relative;
+	height: 40%;
+	width: 100%;
+	padding: 5% 5% 0px;
+
+}
+
+   input#subreddit {
+	width: 80%;
+	height: 100%;
+	position: relative;
+	font-size: 1em;
+	float: left;
+
+}
+
+  button#submit {
+	border-width: 1px;
+	background-color: #F9F6F6;
+	height: 100%;
+	padding: 0px;
+	position: relative;
+	font-size: 1em;
+	float: left;
+	width: 20%;
+}
+
+    span#search-icon{
+    font-size: 1vw;
+    }
+
+    div#warning-container{
+    width: 74.5%;
+    left: 5%;
+    visibility: hidden;
+    position: relative;
+    }
+
+    div#warning-arrow{
+    left: 3%;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 7px solid #F2DEDE;
+    position: relative;
+    }
+
+    div#warning{
+    font-size:1em;
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    width: 100%;
+    height: 100%;
+    }
+
+    span#warning-icon{
+    top:0px;
+    margin:0 1% 0 0;
+    }
+
+
+    div#pbar{
+    visibility: hidden;
+    position: relative;
+    width: 40%;
+    }
+
+
+    div#two{
+    width: 100%;
+    padding:1%;
+    overflow:auto;
+    background-color: rgb(247, 246, 243);
+    }
+
+    div#threebuttons{
+    width: 100%;
+    padding: 0 0 2.5% 0;
+    }
+
+    button.btn{
+    border-radius:0px;
+    }
+
+    div.panel{
+    border-radius:0px;
+    }
+
+    .panel-heading{
+    border-radius:0px;
+    }
+
+    .panelText{
+    text-align: center;
+    }
+
+    .panel-body{
+    background-color: rgba(247, 246, 243, 0.9);
+    }
+
+    .panel-primary{
+    border-color: #5E5D5D;
+    }
+
+    div#part4{
+    display:inline-block;
+    width: 60%;
+    min-height: 80%;
+    }
+
+    div#part5{
+    display:inline-block;
+    float: right;
+    width: 36%;
+    min-height: 80%;
+    }
+
+
+    .Ograph{
+    color: white;
+    background-color:rgba(0,0,255,0.6);
+    width:50%;
+    height: 5%;
+    }
+
+    .Ograph:hover {
+    background-color:rgba(0,0,255,0.8);
+    }
+
+    div#three{
+    height:12%;
+    background: rgb(28, 30, 32);
+    color:white;
+    }
+
+    @media (max-width:20em){
+     div#logo-icon{
+          display:none;
+     }
+
+    div#search{
+    width:100%;
+    height:150px;
+    }
+
+    h2#search-header{
+    font-size:8vw;
+    }
+
+    input#subreddit{
+    font-size:4vw;
+    }
+    button#submit{
+    font-size:4vw;
+    }
+
+    div#warning{
+    font-size:4vw;
+    }
+
+    div#logo{
+    font-size:6vw;
+    }
+    }
+
+    @media (max-width:35em){
+
+          div#login-container{
+            display:none;
+          }
+
+          div#create-container{
+            display:none;
+          }
+
+          div#simplenav-button{
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            align-items:center;
+          }
+
+          div#part4{
+          width:100%;
+          }
+          div#part5{
+          display:block;
+          width:100%
+          }
+    }

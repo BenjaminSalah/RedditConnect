@@ -1,0 +1,9 @@
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python34\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Ben\Documents\DjangoProjects\RedditConnect\app\views.py", line 16, in index
+    template = loader.get_template("app/index.html")
+  File "C:\Python34\lib\site-packages\django\template\loader.py", line 46, in get_template
+    raise TemplateDoesNotExist(template_name)
+django.template.base.TemplateDoesNotExist: app/index.html

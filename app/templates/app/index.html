@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+{% load staticfiles %}
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<head>
+    <link rel="icon" href="{% static 'favicon.ico' %}">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<style>
+    @import "/static/index.css";
+</style>
+<body>
+<div id="nav" class="flexer">
+    <div id="logo-icon" class="flexer"></div>
+    <div id="logo" class="flexer">Reddit Connect</div>
+    <div id="rightnav" class="flexer">
+        <div id="simplenav-button">
+            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                <span id="simplenav-icon" class="glyphicon glyphicon-list" aria-hidden="true"></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Create</a></li>
+            </ul>
+        </div>
+        <div id="login-container" class="flexer">
+        <div id="login" class="flexer">Login
+            <div id="login-form" style="visibility:hidden" class="option-form">
+                <input class="option-input" placeholder="Username"></input>
+                <input class="option-input" placeholder="Password"></input>
+                <button class="option-button">Log in</button>
+            </div>
+        </div>
+        </div>
+        <div id="create-container" class="flexer">
+        <div id="create" class="flexer">Create Account
+             <div id="create-form"  style="visibility:hidden" class="option-form">
+                <input class="option-input" placeholder="Username"></input>
+                <input class="option-input" placeholder="Password"></input>
+                <input class="option-input" placeholder="Enter password again"></input>
+                <input class="option-input" placeholder="Email"></input>
+                <input class="option-input" placeholder="Moderator of"></input>
+                <button class="option-button">Create Account</button>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<div id="one" class="flexer">
+    <div id="search">
+        <div id="header-container">
+            <h2 id="search-header">Search a Subreddit</h2>
+        </div>
+        <div id="search-container">
+            <input id="subreddit" placeholder="AskReddit"/>
+            <button id="submit" type="button">Search</button>
+        </div>
+        <div id="warning-container">
+            <div id="warning-arrow"></div>
+            <div id="warning">Please enter a valid Subreddit</div>
+        </div>
+        <div id="pbar" class="container">
+            <div class="progress">
+                <div  id=pdone class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
+                     style="width:0%"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="two">
+    <div id="threebuttons" class="container">
+        <div class="btn-group btn-group-justified">
+            <div class="btn-group">
+                <button  id="recent-button" type="button" class="btn btn-primary">Recent</button>
+            </div>
+            <div class="btn-group">
+                <button id="favorites-button" type="button" class="btn btn-primary">Favorite</button>
+            </div>
+            <div class="btn-group">
+                <button id="random-button" type="button" class="btn btn-primary">Random</button>
+            </div>
+        </div>
+    </div>
+    <div id="part4" class="panel panel-primary">
+        <div id="part4a" class="panel-heading panelText" >Related Subreddits</div>
+        <div id="part4b" class="panel-body" ></div>
+    </div>
+
+    <div id="part5" class="panel panel-primary">
+        <div class="panel-heading panelText">Information</div>
+        <div id="part5b" class="panel-body"></div>
+    </div>
+</div>
+<div id="three"></div>
+    <script src="/static/index.js"></script>
