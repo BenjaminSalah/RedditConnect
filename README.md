@@ -34,7 +34,7 @@ My to-do list for v2.0:
 
 *Setup a relational database for the storage of user information and session.
 
-*Refactoring and more error checking.
+*Refactoring(especially splitting code base into individual apps), as well as more error checking.
 
 *Make requests from the browser side in parallel with that of the backend in order to increase the search processing speed.
 
