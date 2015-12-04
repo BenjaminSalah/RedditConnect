@@ -21,9 +21,15 @@ For MongoDB run mongo. The most important command for running purposes is db.dro
 
 My to-do list for v2.0:
 *Let moderators log in and request a more accurate rundown of related subreddits. The backend will process these requests whenever resources are free.
+
 *Add Django session.
+
 *Setup a relational database for the storage of user information and session.
-*Refactoring and more error checking
+
+*Refactoring and more error checking.
+
 *Make requests from the browser side in parallel with that of the backend in order to increase the search processing speed.
+
 *Use OAuth for the Reddit API in order to be able to make requests more frequently. Currently non OAuth is capped at 2 seconds per requests, OAuth is capped at 1 second per request.
+
 *Revamp the UI from using AngularJS to introducing a more streamlined CSS layout.
